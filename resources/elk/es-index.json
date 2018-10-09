@@ -30,6 +30,9 @@
                 "bytes": {
                     "type": "long"
                 },
+                "sentBytes": {
+                    "type": "long"
+                },
                 "grpThreads": {
                     "type": "long"
                 },
