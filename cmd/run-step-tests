@@ -132,7 +132,7 @@ ${JVMARGS} \
 -v /home/ec2-user/${TEST_NAME}/conf-dir:/jmconf \
 --entrypoint '/input_data/run_${TS}.sh' \
 --name '${TEST_NAME}' \
-ordnancesurvey/jmeter:v2.0 > /home/ec2-user/${TEST_NAME}/log-dir/${TS}-docker.log 2>&1 &\
+${DOCKER_JMETER} > /home/ec2-user/${TEST_NAME}/log-dir/${TS}-docker.log 2>&1 &\
 "
 
 # Copy the file to all of the JMeter servers and start it running
